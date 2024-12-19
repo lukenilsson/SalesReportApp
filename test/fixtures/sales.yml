@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account: one
+  upc: MyString
+  item: MyString
+  quantity: 1
+  month: 1
+  year: 1
+  sale_date: 2024-12-19
+
+two:
+  account: two
+  upc: MyString
+  item: MyString
+  quantity: 1
+  month: 1
+  year: 1
+  sale_date: 2024-12-19
