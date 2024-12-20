@@ -1,0 +1,12 @@
+<% @account = Account.first %>
+<!-- Example: Just picking the first account -->
+<h2><%= @account.name %> Sales Trends</h2>
+
+<%= line_chart @account.sales.group_by_month(:sale_date).sum(:quantity), 
+  library: {title: "Monthly Sales"} %>
+
+<%= line_chart @account.sales.group_by_quarter(:sale_date).sum(:quantity),
+  library: {title: "Quarterly Sales"} %>
+
+<%= line_chart @account.sales.group_by_year(:sale_date).sum(:quantity),
+  library: {title: "Yearly Sales"} %>
