@@ -1,4 +1,4 @@
-<%= form_with url: process_upload_path, local: true, multipart: true do |form| %>
+<%= form_with url: '/sales/process_upload', local: true, multipart: true do |form| %>
 <%= form.file_field :file %>
 <%= form.submit 'Upload' %>
 <% end %>
